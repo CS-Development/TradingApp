@@ -1,0 +1,680 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		240370C528BFCAEA00F13618 /* TradingAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240370C428BFCAEA00F13618 /* TradingAppApp.swift */; };
+		240370C728BFCAEA00F13618 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240370C628BFCAEA00F13618 /* ContentView.swift */; };
+		240370C928BFCAEE00F13618 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 240370C828BFCAEE00F13618 /* Assets.xcassets */; };
+		240370CC28BFCAEE00F13618 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 240370CB28BFCAEE00F13618 /* Preview Assets.xcassets */; };
+		240370D628BFCAEE00F13618 /* TradingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240370D528BFCAEE00F13618 /* TradingAppTests.swift */; };
+		240370E028BFCAEE00F13618 /* TradingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240370DF28BFCAEE00F13618 /* TradingAppUITests.swift */; };
+		240370E228BFCAEE00F13618 /* TradingAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240370E128BFCAEE00F13618 /* TradingAppUITestsLaunchTests.swift */; };
+		240370F928BFCE6A00F13618 /* KrakenAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240370F828BFCE6A00F13618 /* KrakenAPI.swift */; };
+		240370FC28BFD0F800F13618 /* TradingAssetPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240370FB28BFD0F800F13618 /* TradingAssetPair.swift */; };
+		240370FE28BFD51800F13618 /* KrakenRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240370FD28BFD51800F13618 /* KrakenRepository.swift */; };
+		2403710028BFD99400F13618 /* LoadTradingAssetPairsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240370FF28BFD99400F13618 /* LoadTradingAssetPairsUseCase.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		240370D228BFCAEE00F13618 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 240370B928BFCAEA00F13618 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 240370C028BFCAEA00F13618;
+			remoteInfo = TradingApp;
+		};
+		240370DC28BFCAEE00F13618 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 240370B928BFCAEA00F13618 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 240370C028BFCAEA00F13618;
+			remoteInfo = TradingApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		240370C128BFCAEA00F13618 /* TradingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TradingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		240370C428BFCAEA00F13618 /* TradingAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingAppApp.swift; sourceTree = "<group>"; };
+		240370C628BFCAEA00F13618 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		240370C828BFCAEE00F13618 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		240370CB28BFCAEE00F13618 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		240370D128BFCAEE00F13618 /* TradingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		240370D528BFCAEE00F13618 /* TradingAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingAppTests.swift; sourceTree = "<group>"; };
+		240370DB28BFCAEE00F13618 /* TradingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TradingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		240370DF28BFCAEE00F13618 /* TradingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingAppUITests.swift; sourceTree = "<group>"; };
+		240370E128BFCAEE00F13618 /* TradingAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		240370F828BFCE6A00F13618 /* KrakenAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KrakenAPI.swift; sourceTree = "<group>"; };
+		240370FB28BFD0F800F13618 /* TradingAssetPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingAssetPair.swift; sourceTree = "<group>"; };
+		240370FD28BFD51800F13618 /* KrakenRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KrakenRepository.swift; sourceTree = "<group>"; };
+		240370FF28BFD99400F13618 /* LoadTradingAssetPairsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadTradingAssetPairsUseCase.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		240370BE28BFCAEA00F13618 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		240370CE28BFCAEE00F13618 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		240370D828BFCAEE00F13618 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		240370B828BFCAEA00F13618 = {
+			isa = PBXGroup;
+			children = (
+				240370C328BFCAEA00F13618 /* TradingApp */,
+				240370D428BFCAEE00F13618 /* TradingAppTests */,
+				240370DE28BFCAEE00F13618 /* TradingAppUITests */,
+				240370C228BFCAEA00F13618 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		240370C228BFCAEA00F13618 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				240370C128BFCAEA00F13618 /* TradingApp.app */,
+				240370D128BFCAEE00F13618 /* TradingAppTests.xctest */,
+				240370DB28BFCAEE00F13618 /* TradingAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		240370C328BFCAEA00F13618 /* TradingApp */ = {
+			isa = PBXGroup;
+			children = (
+				240370F128BFCC4500F13618 /* Utils */,
+				240370EE28BFCC1D00F13618 /* Data */,
+				240370EF28BFCC2F00F13618 /* Domain */,
+				240370F028BFCC3900F13618 /* Presentation */,
+				240370F228BFCC6600F13618 /* Main */,
+				240370C428BFCAEA00F13618 /* TradingAppApp.swift */,
+				240370C628BFCAEA00F13618 /* ContentView.swift */,
+				240370C828BFCAEE00F13618 /* Assets.xcassets */,
+				240370CA28BFCAEE00F13618 /* Preview Content */,
+			);
+			path = TradingApp;
+			sourceTree = "<group>";
+		};
+		240370CA28BFCAEE00F13618 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				240370CB28BFCAEE00F13618 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		240370D428BFCAEE00F13618 /* TradingAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				240370D528BFCAEE00F13618 /* TradingAppTests.swift */,
+			);
+			path = TradingAppTests;
+			sourceTree = "<group>";
+		};
+		240370DE28BFCAEE00F13618 /* TradingAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				240370DF28BFCAEE00F13618 /* TradingAppUITests.swift */,
+				240370E128BFCAEE00F13618 /* TradingAppUITestsLaunchTests.swift */,
+			);
+			path = TradingAppUITests;
+			sourceTree = "<group>";
+		};
+		240370EE28BFCC1D00F13618 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				240370F428BFCCDC00F13618 /* Gateways */,
+				240370F328BFCC9500F13618 /* API */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		240370EF28BFCC2F00F13618 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				240370F628BFCD0000F13618 /* UseCases */,
+				240370F528BFCCF700F13618 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		240370F028BFCC3900F13618 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				240370F728BFCD2400F13618 /* Features */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		240370F128BFCC4500F13618 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		240370F228BFCC6600F13618 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		240370F328BFCC9500F13618 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				240370F828BFCE6A00F13618 /* KrakenAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		240370F428BFCCDC00F13618 /* Gateways */ = {
+			isa = PBXGroup;
+			children = (
+				240370FD28BFD51800F13618 /* KrakenRepository.swift */,
+			);
+			path = Gateways;
+			sourceTree = "<group>";
+		};
+		240370F528BFCCF700F13618 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				240370FB28BFD0F800F13618 /* TradingAssetPair.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		240370F628BFCD0000F13618 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				240370FF28BFD99400F13618 /* LoadTradingAssetPairsUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		240370F728BFCD2400F13618 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		240370C028BFCAEA00F13618 /* TradingApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 240370E528BFCAEE00F13618 /* Build configuration list for PBXNativeTarget "TradingApp" */;
+			buildPhases = (
+				240370BD28BFCAEA00F13618 /* Sources */,
+				240370BE28BFCAEA00F13618 /* Frameworks */,
+				240370BF28BFCAEA00F13618 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TradingApp;
+			productName = TradingApp;
+			productReference = 240370C128BFCAEA00F13618 /* TradingApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		240370D028BFCAEE00F13618 /* TradingAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 240370E828BFCAEE00F13618 /* Build configuration list for PBXNativeTarget "TradingAppTests" */;
+			buildPhases = (
+				240370CD28BFCAEE00F13618 /* Sources */,
+				240370CE28BFCAEE00F13618 /* Frameworks */,
+				240370CF28BFCAEE00F13618 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				240370D328BFCAEE00F13618 /* PBXTargetDependency */,
+			);
+			name = TradingAppTests;
+			productName = TradingAppTests;
+			productReference = 240370D128BFCAEE00F13618 /* TradingAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		240370DA28BFCAEE00F13618 /* TradingAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 240370EB28BFCAEE00F13618 /* Build configuration list for PBXNativeTarget "TradingAppUITests" */;
+			buildPhases = (
+				240370D728BFCAEE00F13618 /* Sources */,
+				240370D828BFCAEE00F13618 /* Frameworks */,
+				240370D928BFCAEE00F13618 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				240370DD28BFCAEE00F13618 /* PBXTargetDependency */,
+			);
+			name = TradingAppUITests;
+			productName = TradingAppUITests;
+			productReference = 240370DB28BFCAEE00F13618 /* TradingAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		240370B928BFCAEA00F13618 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					240370C028BFCAEA00F13618 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					240370D028BFCAEE00F13618 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 240370C028BFCAEA00F13618;
+					};
+					240370DA28BFCAEE00F13618 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 240370C028BFCAEA00F13618;
+					};
+				};
+			};
+			buildConfigurationList = 240370BC28BFCAEA00F13618 /* Build configuration list for PBXProject "TradingApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 240370B828BFCAEA00F13618;
+			productRefGroup = 240370C228BFCAEA00F13618 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				240370C028BFCAEA00F13618 /* TradingApp */,
+				240370D028BFCAEE00F13618 /* TradingAppTests */,
+				240370DA28BFCAEE00F13618 /* TradingAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		240370BF28BFCAEA00F13618 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				240370CC28BFCAEE00F13618 /* Preview Assets.xcassets in Resources */,
+				240370C928BFCAEE00F13618 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		240370CF28BFCAEE00F13618 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		240370D928BFCAEE00F13618 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		240370BD28BFCAEA00F13618 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				240370C728BFCAEA00F13618 /* ContentView.swift in Sources */,
+				240370F928BFCE6A00F13618 /* KrakenAPI.swift in Sources */,
+				2403710028BFD99400F13618 /* LoadTradingAssetPairsUseCase.swift in Sources */,
+				240370FC28BFD0F800F13618 /* TradingAssetPair.swift in Sources */,
+				240370C528BFCAEA00F13618 /* TradingAppApp.swift in Sources */,
+				240370FE28BFD51800F13618 /* KrakenRepository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		240370CD28BFCAEE00F13618 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				240370D628BFCAEE00F13618 /* TradingAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		240370D728BFCAEE00F13618 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				240370E228BFCAEE00F13618 /* TradingAppUITestsLaunchTests.swift in Sources */,
+				240370E028BFCAEE00F13618 /* TradingAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		240370D328BFCAEE00F13618 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 240370C028BFCAEA00F13618 /* TradingApp */;
+			targetProxy = 240370D228BFCAEE00F13618 /* PBXContainerItemProxy */;
+		};
+		240370DD28BFCAEE00F13618 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 240370C028BFCAEA00F13618 /* TradingApp */;
+			targetProxy = 240370DC28BFCAEE00F13618 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		240370E328BFCAEE00F13618 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		240370E428BFCAEE00F13618 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		240370E628BFCAEE00F13618 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TradingApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.test.TradingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		240370E728BFCAEE00F13618 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TradingApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.test.TradingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		240370E928BFCAEE00F13618 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.test.TradingAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TradingApp.app/TradingApp";
+			};
+			name = Debug;
+		};
+		240370EA28BFCAEE00F13618 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.test.TradingAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TradingApp.app/TradingApp";
+			};
+			name = Release;
+		};
+		240370EC28BFCAEE00F13618 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.test.TradingAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TradingApp;
+			};
+			name = Debug;
+		};
+		240370ED28BFCAEE00F13618 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.test.TradingAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TradingApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		240370BC28BFCAEA00F13618 /* Build configuration list for PBXProject "TradingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				240370E328BFCAEE00F13618 /* Debug */,
+				240370E428BFCAEE00F13618 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		240370E528BFCAEE00F13618 /* Build configuration list for PBXNativeTarget "TradingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				240370E628BFCAEE00F13618 /* Debug */,
+				240370E728BFCAEE00F13618 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		240370E828BFCAEE00F13618 /* Build configuration list for PBXNativeTarget "TradingAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				240370E928BFCAEE00F13618 /* Debug */,
+				240370EA28BFCAEE00F13618 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		240370EB28BFCAEE00F13618 /* Build configuration list for PBXNativeTarget "TradingAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				240370EC28BFCAEE00F13618 /* Debug */,
+				240370ED28BFCAEE00F13618 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 240370B928BFCAEA00F13618 /* Project object */;
+}
