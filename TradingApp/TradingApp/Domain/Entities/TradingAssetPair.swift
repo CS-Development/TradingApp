@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct TradingAssetPair: Codable {
+public struct TradingAssetPair: Codable, Hashable {
     let altname: String
     let wsname: String?
     let aclassBase: String

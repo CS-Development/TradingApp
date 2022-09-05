@@ -28,6 +28,7 @@ struct KrakenAPI: KrakenAPIType {
         let publisher = URLSession.shared.dataTaskPublisher(for: url)
         return publisher
             .map(\.data)
+            .replaceError(with: Data())
             .decode(type: DataResponse<TradingAssetPair>.self, decoder: JSONDecoder())
             .map { $0.result }
             .eraseToAnyPublisher()

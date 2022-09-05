@@ -18,6 +18,16 @@
 		240370FC28BFD0F800F13618 /* TradingAssetPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240370FB28BFD0F800F13618 /* TradingAssetPair.swift */; };
 		240370FE28BFD51800F13618 /* KrakenRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240370FD28BFD51800F13618 /* KrakenRepository.swift */; };
 		2403710028BFD99400F13618 /* LoadTradingAssetPairsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240370FF28BFD99400F13618 /* LoadTradingAssetPairsUseCase.swift */; };
+		2412484828C660B7002BAFFE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2412484728C660B7002BAFFE /* HomeView.swift */; };
+		2412484A28C66109002BAFFE /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2412484928C66108002BAFFE /* HomeViewModel.swift */; };
+		2412484D28C667C1002BAFFE /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2412484C28C667C1002BAFFE /* ListItem.swift */; };
+		2412484F28C66E16002BAFFE /* AppCompositionRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2412484E28C66E16002BAFFE /* AppCompositionRoot.swift */; };
+		2412485128C66F57002BAFFE /* Assembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2412485028C66F57002BAFFE /* Assembler.swift */; };
+		2412485328C66FCF002BAFFE /* HomeAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2412485228C66FCF002BAFFE /* HomeAssembler.swift */; };
+		2412485628C6752C002BAFFE /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2412485528C6752C002BAFFE /* TabBar.swift */; };
+		2412485828C675A8002BAFFE /* TabViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2412485728C675A8002BAFFE /* TabViewProvider.swift */; };
+		2412485A28C6782A002BAFFE /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2412485928C6782A002BAFFE /* View+Ext.swift */; };
+		2412485C28C679AB002BAFFE /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2412485B28C679AB002BAFFE /* TabBarItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +62,16 @@
 		240370FB28BFD0F800F13618 /* TradingAssetPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradingAssetPair.swift; sourceTree = "<group>"; };
 		240370FD28BFD51800F13618 /* KrakenRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KrakenRepository.swift; sourceTree = "<group>"; };
 		240370FF28BFD99400F13618 /* LoadTradingAssetPairsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadTradingAssetPairsUseCase.swift; sourceTree = "<group>"; };
+		2412484728C660B7002BAFFE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		2412484928C66108002BAFFE /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		2412484C28C667C1002BAFFE /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		2412484E28C66E16002BAFFE /* AppCompositionRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCompositionRoot.swift; sourceTree = "<group>"; };
+		2412485028C66F57002BAFFE /* Assembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembler.swift; sourceTree = "<group>"; };
+		2412485228C66FCF002BAFFE /* HomeAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssembler.swift; sourceTree = "<group>"; };
+		2412485528C6752C002BAFFE /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		2412485728C675A8002BAFFE /* TabViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewProvider.swift; sourceTree = "<group>"; };
+		2412485928C6782A002BAFFE /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
+		2412485B28C679AB002BAFFE /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,7 +181,9 @@
 		240370F028BFCC3900F13618 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				240370F728BFCD2400F13618 /* Features */,
+				2412485428C67500002BAFFE /* Components */,
+				2412484B28C667A6002BAFFE /* Utils */,
+				240370F728BFCD2400F13618 /* Screens */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -176,6 +198,8 @@
 		240370F228BFCC6600F13618 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				2412484E28C66E16002BAFFE /* AppCompositionRoot.swift */,
+				2412485028C66F57002BAFFE /* Assembler.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -212,11 +236,41 @@
 			path = UseCases;
 			sourceTree = "<group>";
 		};
-		240370F728BFCD2400F13618 /* Features */ = {
+		240370F728BFCD2400F13618 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				2412484628C66098002BAFFE /* Home */,
 			);
-			path = Features;
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		2412484628C66098002BAFFE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2412484728C660B7002BAFFE /* HomeView.swift */,
+				2412484928C66108002BAFFE /* HomeViewModel.swift */,
+				2412485228C66FCF002BAFFE /* HomeAssembler.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2412484B28C667A6002BAFFE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2412484C28C667C1002BAFFE /* ListItem.swift */,
+				2412485928C6782A002BAFFE /* View+Ext.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2412485428C67500002BAFFE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2412485528C6752C002BAFFE /* TabBar.swift */,
+				2412485728C675A8002BAFFE /* TabViewProvider.swift */,
+				2412485B28C679AB002BAFFE /* TabBarItem.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,9 +404,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				240370C728BFCAEA00F13618 /* ContentView.swift in Sources */,
+				2412485328C66FCF002BAFFE /* HomeAssembler.swift in Sources */,
+				2412485A28C6782A002BAFFE /* View+Ext.swift in Sources */,
+				2412484828C660B7002BAFFE /* HomeView.swift in Sources */,
 				240370F928BFCE6A00F13618 /* KrakenAPI.swift in Sources */,
+				2412484D28C667C1002BAFFE /* ListItem.swift in Sources */,
+				2412485C28C679AB002BAFFE /* TabBarItem.swift in Sources */,
+				2412484F28C66E16002BAFFE /* AppCompositionRoot.swift in Sources */,
+				2412485128C66F57002BAFFE /* Assembler.swift in Sources */,
+				2412484A28C66109002BAFFE /* HomeViewModel.swift in Sources */,
 				2403710028BFD99400F13618 /* LoadTradingAssetPairsUseCase.swift in Sources */,
+				2412485628C6752C002BAFFE /* TabBar.swift in Sources */,
 				240370FC28BFD0F800F13618 /* TradingAssetPair.swift in Sources */,
+				2412485828C675A8002BAFFE /* TabViewProvider.swift in Sources */,
 				240370C528BFCAEA00F13618 /* TradingAppApp.swift in Sources */,
 				240370FE28BFD51800F13618 /* KrakenRepository.swift in Sources */,
 			);
