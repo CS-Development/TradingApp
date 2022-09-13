@@ -9,14 +9,14 @@ import Foundation
 import Combine
 
 public protocol KrakenRepositoryType { // a.k.a. gateway
-    func getTradableAssetsPairs() -> AnyPublisher<[String: TradingAssetPair], Error>
+    func getTradableAssetsPairs(decoder: JSONDecoder) -> AnyPublisher<[String: TradingAssetPair], Error>
 }
 
 public struct KrakenRepository: KrakenRepositoryType {
     let apiClient: KrakenAPIType
     
-    public func getTradableAssetsPairs() -> AnyPublisher<[String : TradingAssetPair], Error> {
-        return apiClient.getTradableAssetsPairs()
+    public func getTradableAssetsPairs(decoder: JSONDecoder) -> AnyPublisher<[String : TradingAssetPair], Error> {
+        return apiClient.getTradableAssetsPairs(decoder: decoder)
     }
 }
 
