@@ -22,6 +22,6 @@ public class LoadTradingAssetPairsUseCase: LoadTradingAssetPairsUseCaseType {
     
     // execute request
     public func execute() -> AnyPublisher<[String : TradingAssetPair], Error> {
-        return krakenRepository.getTradableAssetsPairs()
+        return krakenRepository.getTradableAssetsPairs(decoder: JSONDecoder())
     }
 }

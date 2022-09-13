@@ -9,12 +9,11 @@ import Foundation
 import Combine
 
 protocol KrakenAPIType {
-    func getTradableAssetsPairs() -> AnyPublisher<[String: TradingAssetPair], Error>
+    func getTradableAssetsPairs(decoder: JSONDecoder) -> AnyPublisher<[String: TradingAssetPair], Error>
 }
 
 struct KrakenAPI: KrakenAPIType {
     
-    let baseURL = "https://api.kraken.com/0/public"
     var cancelBag = Set<AnyCancellable>()
     
     struct DataResponse<T>: Decodable where T: Decodable {
@@ -22,9 +21,9 @@ struct KrakenAPI: KrakenAPIType {
         public let error: [String]
     }
     
-    func getTradableAssetsPairs() -> AnyPublisher<[String: TradingAssetPair], Error> {
-        let url = URL(string: baseURL)!.appendingPathComponent("AssetPairs")
-        
+    func getTradableAssetsPairs(decoder: JSONDecoder) -> AnyPublisher<[String: TradingAssetPair], Error> {
+        let url = URL(string: Constants.baseURL)!.appendingPathComponent("AssetPairs")
+
         let publisher = URLSession.shared.dataTaskPublisher(for: url)
         return publisher
             .map(\.data)

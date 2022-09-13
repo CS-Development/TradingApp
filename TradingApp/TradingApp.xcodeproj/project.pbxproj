@@ -28,6 +28,7 @@
 		2412485828C675A8002BAFFE /* TabViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2412485728C675A8002BAFFE /* TabViewProvider.swift */; };
 		2412485A28C6782A002BAFFE /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2412485928C6782A002BAFFE /* View+Ext.swift */; };
 		2412485C28C679AB002BAFFE /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2412485B28C679AB002BAFFE /* TabBarItem.swift */; };
+		4C92D6CE28D1366F0019A4CA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C92D6CD28D1366F0019A4CA /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		2412485728C675A8002BAFFE /* TabViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewProvider.swift; sourceTree = "<group>"; };
 		2412485928C6782A002BAFFE /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 		2412485B28C679AB002BAFFE /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		4C92D6CD28D1366F0019A4CA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +124,7 @@
 		240370C328BFCAEA00F13618 /* TradingApp */ = {
 			isa = PBXGroup;
 			children = (
-				240370F128BFCC4500F13618 /* Utils */,
+				4C92D6CC28D136640019A4CA /* Utils */,
 				240370EE28BFCC1D00F13618 /* Data */,
 				240370EF28BFCC2F00F13618 /* Domain */,
 				240370F028BFCC3900F13618 /* Presentation */,
@@ -186,13 +188,6 @@
 				240370F728BFCD2400F13618 /* Screens */,
 			);
 			path = Presentation;
-			sourceTree = "<group>";
-		};
-		240370F128BFCC4500F13618 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utils;
 			sourceTree = "<group>";
 		};
 		240370F228BFCC6600F13618 /* Main */ = {
@@ -271,6 +266,14 @@
 				2412485B28C679AB002BAFFE /* TabBarItem.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		4C92D6CC28D136640019A4CA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4C92D6CD28D1366F0019A4CA /* Constants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -404,6 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				240370C728BFCAEA00F13618 /* ContentView.swift in Sources */,
+				4C92D6CE28D1366F0019A4CA /* Constants.swift in Sources */,
 				2412485328C66FCF002BAFFE /* HomeAssembler.swift in Sources */,
 				2412485A28C6782A002BAFFE /* View+Ext.swift in Sources */,
 				2412484828C660B7002BAFFE /* HomeView.swift in Sources */,
