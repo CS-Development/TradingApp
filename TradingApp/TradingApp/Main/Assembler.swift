@@ -7,8 +7,14 @@
 
 import Foundation
 
-protocol Assembler: AnyObject {
+protocol Assembler: AnyObject,
+    HomeAssembler,
+    TradeAssembler,
+    BalancesAssembler,
+    AccountAssembler {
     
 }
 
-final class DefaultAssembler: HomeViewAssembler {}
+final class DefaultAssembler: Assembler {
+
+}

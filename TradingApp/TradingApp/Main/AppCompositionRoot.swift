@@ -13,9 +13,11 @@ final class AppCompositionRoot {
     static let assembler = DefaultAssembler()
     
     public static var start: some View {
-        return TabBar(
-            tabProviders: [
-                assembler.resolve(HomeTabViewProvider.self)
-            ])
+        return TabBar(tabProviders: [
+            assembler.resolve(HomeTabViewProvider.self),
+            assembler.resolve(TradeTabViewProvider.self),
+            assembler.resolve(BalancesTabViewProvider.self),
+            assembler.resolve(AccountTabViewProvider.self)
+        ])
     }
 }

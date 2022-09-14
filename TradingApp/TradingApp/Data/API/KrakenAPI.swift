@@ -10,6 +10,8 @@ import Combine
 
 protocol KrakenAPIType {
     func getTradableAssetsPairs() -> AnyPublisher<[String: TradingAssetPair], Error>
+    func getTickerInformation(pairKey: String) -> AnyPublisher<[String : Ticker], Error>
+    func getOHLCData(pairKey: String)-> AnyPublisher<TickDataResult, Error>
 }
 
 struct KrakenAPI: KrakenAPIType {
@@ -20,6 +22,27 @@ struct KrakenAPI: KrakenAPIType {
     struct DataResponse<T>: Decodable where T: Decodable {
         public let result: [String: T]
         public let error: [String]
+        public var description: String {
+            return """
+            ------------
+            result = \(result)
+            error = \(error)
+            ------------
+            """
+        }
+    }
+    
+    struct DataResponseExt<T>: Decodable where T: Decodable {
+        public let result: T
+        public let error: [String]
+        public var description: String {
+            return """
+            ------------
+            result = \(result)
+            error = \(error)
+            ------------
+            """
+        }
     }
     
     func getTradableAssetsPairs() -> AnyPublisher<[String: TradingAssetPair], Error> {
@@ -31,6 +54,35 @@ struct KrakenAPI: KrakenAPIType {
             .replaceError(with: Data())
             .decode(type: DataResponse<TradingAssetPair>.self, decoder: JSONDecoder())
             .map { $0.result }
+            .eraseToAnyPublisher()
+    }
+    
+    func getTickerInformation(pairKey: String) -> AnyPublisher<[String : Ticker], Error> {
+        var url = URL(string: baseURL)!.appendingPathComponent("Ticker")
+        url.appendQueryItem(name: "pair", value: pairKey)
+        let publisher = URLSession.shared.dataTaskPublisher(for: url)
+        return publisher
+            .map(\.data)
+            .replaceError(with: Data())
+            .decode(type: DataResponse<Ticker>.self, decoder: JSONDecoder())
+            .print()
+            .map{ $0.result }
+            .receive(on: DispatchQueue.main)
+            .eraseToAnyPublisher()
+    }
+    
+    func getOHLCData(pairKey: String) -> AnyPublisher<TickDataResult, Error> {
+        var url = URL(string: baseURL)!.appendingPathComponent("OHLC")
+        url.appendQueryItem(name: "pair", value: pairKey)
+        //url.appendQueryItem(name: "interval", value: "1")
+        let publisher = URLSession.shared.dataTaskPublisher(for: url)
+        return publisher
+            .map(\.data)
+            .replaceError(with: Data())
+            .decode(type: DataResponseExt<TickDataResult>.self, decoder: JSONDecoder())
+            .print()
+            .map{ $0.result }
+            .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
     }
 }

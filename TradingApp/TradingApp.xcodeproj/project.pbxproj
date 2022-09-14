@@ -28,6 +28,23 @@
 		2412485828C675A8002BAFFE /* TabViewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2412485728C675A8002BAFFE /* TabViewProvider.swift */; };
 		2412485A28C6782A002BAFFE /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2412485928C6782A002BAFFE /* View+Ext.swift */; };
 		2412485C28C679AB002BAFFE /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2412485B28C679AB002BAFFE /* TabBarItem.swift */; };
+		2469E77B28D1DAB900CADA2B /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469E77A28D1DAB900CADA2B /* Ticker.swift */; };
+		2469E77D28D1E16600CADA2B /* TickData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469E77C28D1E16600CADA2B /* TickData.swift */; };
+		2469E78028D1E1E600CADA2B /* URL+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469E77F28D1E1E600CADA2B /* URL+Ext.swift */; };
+		2469E78228D1E2BA00CADA2B /* LoadTickerUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469E78128D1E2BA00CADA2B /* LoadTickerUseCase.swift */; };
+		2469E78428D1E2DC00CADA2B /* LoadOHLCDataUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469E78328D1E2DC00CADA2B /* LoadOHLCDataUseCase.swift */; };
+		2469E79528D1E59000CADA2B /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469E78628D1E59000CADA2B /* AccountViewModel.swift */; };
+		2469E79628D1E59000CADA2B /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469E78728D1E59000CADA2B /* AccountView.swift */; };
+		2469E79728D1E59000CADA2B /* AccountAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469E78828D1E59000CADA2B /* AccountAssembler.swift */; };
+		2469E79828D1E59000CADA2B /* TradeAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469E78A28D1E59000CADA2B /* TradeAssembler.swift */; };
+		2469E79928D1E59000CADA2B /* TradeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469E78B28D1E59000CADA2B /* TradeView.swift */; };
+		2469E79A28D1E59000CADA2B /* TradeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469E78C28D1E59000CADA2B /* TradeViewModel.swift */; };
+		2469E79B28D1E59000CADA2B /* BalancesAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469E78E28D1E59000CADA2B /* BalancesAssembler.swift */; };
+		2469E79C28D1E59000CADA2B /* BalancesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469E78F28D1E59000CADA2B /* BalancesView.swift */; };
+		2469E79D28D1E59000CADA2B /* BalancesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469E79028D1E59000CADA2B /* BalancesViewModel.swift */; };
+		2469E79E28D1E59000CADA2B /* TemplateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469E79228D1E59000CADA2B /* TemplateView.swift */; };
+		2469E79F28D1E59000CADA2B /* TemplateAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469E79328D1E59000CADA2B /* TemplateAssembler.swift */; };
+		2469E7A028D1E59000CADA2B /* TemplateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2469E79428D1E59000CADA2B /* TemplateViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +89,23 @@
 		2412485728C675A8002BAFFE /* TabViewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewProvider.swift; sourceTree = "<group>"; };
 		2412485928C6782A002BAFFE /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 		2412485B28C679AB002BAFFE /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		2469E77A28D1DAB900CADA2B /* Ticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; };
+		2469E77C28D1E16600CADA2B /* TickData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickData.swift; sourceTree = "<group>"; };
+		2469E77F28D1E1E600CADA2B /* URL+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Ext.swift"; sourceTree = "<group>"; };
+		2469E78128D1E2BA00CADA2B /* LoadTickerUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadTickerUseCase.swift; sourceTree = "<group>"; };
+		2469E78328D1E2DC00CADA2B /* LoadOHLCDataUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadOHLCDataUseCase.swift; sourceTree = "<group>"; };
+		2469E78628D1E59000CADA2B /* AccountViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		2469E78728D1E59000CADA2B /* AccountView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		2469E78828D1E59000CADA2B /* AccountAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountAssembler.swift; sourceTree = "<group>"; };
+		2469E78A28D1E59000CADA2B /* TradeAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradeAssembler.swift; sourceTree = "<group>"; };
+		2469E78B28D1E59000CADA2B /* TradeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradeView.swift; sourceTree = "<group>"; };
+		2469E78C28D1E59000CADA2B /* TradeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradeViewModel.swift; sourceTree = "<group>"; };
+		2469E78E28D1E59000CADA2B /* BalancesAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalancesAssembler.swift; sourceTree = "<group>"; };
+		2469E78F28D1E59000CADA2B /* BalancesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalancesView.swift; sourceTree = "<group>"; };
+		2469E79028D1E59000CADA2B /* BalancesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalancesViewModel.swift; sourceTree = "<group>"; };
+		2469E79228D1E59000CADA2B /* TemplateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateView.swift; sourceTree = "<group>"; };
+		2469E79328D1E59000CADA2B /* TemplateAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateAssembler.swift; sourceTree = "<group>"; };
+		2469E79428D1E59000CADA2B /* TemplateViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +225,7 @@
 		240370F128BFCC4500F13618 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				2469E77E28D1E1CF00CADA2B /* Extensions */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -224,6 +259,8 @@
 			isa = PBXGroup;
 			children = (
 				240370FB28BFD0F800F13618 /* TradingAssetPair.swift */,
+				2469E77A28D1DAB900CADA2B /* Ticker.swift */,
+				2469E77C28D1E16600CADA2B /* TickData.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -232,6 +269,8 @@
 			isa = PBXGroup;
 			children = (
 				240370FF28BFD99400F13618 /* LoadTradingAssetPairsUseCase.swift */,
+				2469E78128D1E2BA00CADA2B /* LoadTickerUseCase.swift */,
+				2469E78328D1E2DC00CADA2B /* LoadOHLCDataUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -239,6 +278,10 @@
 		240370F728BFCD2400F13618 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				2469E78528D1E59000CADA2B /* Account */,
+				2469E78D28D1E59000CADA2B /* Balances */,
+				2469E79128D1E59000CADA2B /* Template */,
+				2469E78928D1E59000CADA2B /* Trade */,
 				2412484628C66098002BAFFE /* Home */,
 			);
 			path = Screens;
@@ -271,6 +314,54 @@
 				2412485B28C679AB002BAFFE /* TabBarItem.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		2469E77E28D1E1CF00CADA2B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2469E77F28D1E1E600CADA2B /* URL+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2469E78528D1E59000CADA2B /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				2469E78628D1E59000CADA2B /* AccountViewModel.swift */,
+				2469E78728D1E59000CADA2B /* AccountView.swift */,
+				2469E78828D1E59000CADA2B /* AccountAssembler.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		2469E78928D1E59000CADA2B /* Trade */ = {
+			isa = PBXGroup;
+			children = (
+				2469E78A28D1E59000CADA2B /* TradeAssembler.swift */,
+				2469E78B28D1E59000CADA2B /* TradeView.swift */,
+				2469E78C28D1E59000CADA2B /* TradeViewModel.swift */,
+			);
+			path = Trade;
+			sourceTree = "<group>";
+		};
+		2469E78D28D1E59000CADA2B /* Balances */ = {
+			isa = PBXGroup;
+			children = (
+				2469E78E28D1E59000CADA2B /* BalancesAssembler.swift */,
+				2469E78F28D1E59000CADA2B /* BalancesView.swift */,
+				2469E79028D1E59000CADA2B /* BalancesViewModel.swift */,
+			);
+			path = Balances;
+			sourceTree = "<group>";
+		};
+		2469E79128D1E59000CADA2B /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				2469E79228D1E59000CADA2B /* TemplateView.swift */,
+				2469E79328D1E59000CADA2B /* TemplateAssembler.swift */,
+				2469E79428D1E59000CADA2B /* TemplateViewModel.swift */,
+			);
+			path = Template;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -403,20 +494,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2469E79A28D1E59000CADA2B /* TradeViewModel.swift in Sources */,
+				2469E79B28D1E59000CADA2B /* BalancesAssembler.swift in Sources */,
 				240370C728BFCAEA00F13618 /* ContentView.swift in Sources */,
 				2412485328C66FCF002BAFFE /* HomeAssembler.swift in Sources */,
 				2412485A28C6782A002BAFFE /* View+Ext.swift in Sources */,
+				2469E78028D1E1E600CADA2B /* URL+Ext.swift in Sources */,
+				2469E78428D1E2DC00CADA2B /* LoadOHLCDataUseCase.swift in Sources */,
+				2469E79D28D1E59000CADA2B /* BalancesViewModel.swift in Sources */,
 				2412484828C660B7002BAFFE /* HomeView.swift in Sources */,
 				240370F928BFCE6A00F13618 /* KrakenAPI.swift in Sources */,
 				2412484D28C667C1002BAFFE /* ListItem.swift in Sources */,
+				2469E79628D1E59000CADA2B /* AccountView.swift in Sources */,
+				2469E79F28D1E59000CADA2B /* TemplateAssembler.swift in Sources */,
 				2412485C28C679AB002BAFFE /* TabBarItem.swift in Sources */,
+				2469E79828D1E59000CADA2B /* TradeAssembler.swift in Sources */,
+				2469E79E28D1E59000CADA2B /* TemplateView.swift in Sources */,
 				2412484F28C66E16002BAFFE /* AppCompositionRoot.swift in Sources */,
 				2412485128C66F57002BAFFE /* Assembler.swift in Sources */,
+				2469E79728D1E59000CADA2B /* AccountAssembler.swift in Sources */,
+				2469E7A028D1E59000CADA2B /* TemplateViewModel.swift in Sources */,
 				2412484A28C66109002BAFFE /* HomeViewModel.swift in Sources */,
+				2469E77D28D1E16600CADA2B /* TickData.swift in Sources */,
+				2469E79C28D1E59000CADA2B /* BalancesView.swift in Sources */,
 				2403710028BFD99400F13618 /* LoadTradingAssetPairsUseCase.swift in Sources */,
 				2412485628C6752C002BAFFE /* TabBar.swift in Sources */,
 				240370FC28BFD0F800F13618 /* TradingAssetPair.swift in Sources */,
+				2469E79928D1E59000CADA2B /* TradeView.swift in Sources */,
+				2469E79528D1E59000CADA2B /* AccountViewModel.swift in Sources */,
+				2469E77B28D1DAB900CADA2B /* Ticker.swift in Sources */,
 				2412485828C675A8002BAFFE /* TabViewProvider.swift in Sources */,
+				2469E78228D1E2BA00CADA2B /* LoadTickerUseCase.swift in Sources */,
 				240370C528BFCAEA00F13618 /* TradingAppApp.swift in Sources */,
 				240370FE28BFD51800F13618 /* KrakenRepository.swift in Sources */,
 			);

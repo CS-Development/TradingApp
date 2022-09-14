@@ -8,15 +8,13 @@
 import Foundation
 
 protocol HomeAssembler {
-    func resolve(_ type: HomeView.Type) -> HomeView
     func resolve(_ type: HomeTabViewProvider.Type) -> HomeTabViewProvider
 }
 
-class HomeViewAssembler: HomeAssembler {}
 class HomeTabViewProvider: TabViewProvider {}
 
-extension HomeViewAssembler {
-    func resolve(_ type: HomeView.Type) -> HomeView {
+extension HomeAssembler {
+    private func resolve(_ type: HomeView.Type) -> HomeView {
         let apiClient = KrakenAPI()
         let repository = KrakenRepository(apiClient: apiClient)
         let pairsCase = LoadTradingAssetPairsUseCase(krakenRepository: repository)
